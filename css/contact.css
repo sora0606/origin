@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width:840px) {
+    html{
+        font-size: 7px;
+    }
+}
+
+body {
+    color: #fff;
+    font-family: STKaiti;
+    line-height: 1.7;
+    background-color: #0e0d20;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #121212;
+}
+
+li {
+    list-style: none;
+    font-size: 11.6rem;
+}
+
+.portfolio-title {
+    color: #fff;
+    display: none;
+    font-size: 6.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 40;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.mainvisual {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    overflow: hidden;
+    margin: auto;
+    background-image: url("../img/contact.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-title {
+    max-width: 100%;
+    font-size: 25rem;
+    font-weight: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+}
+
+@media screen and (max-width:840px) {
+    .page-title{
+        font-size: 15rem;
+    }
+}
+
+.mainvisual a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 10px 80px 110px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+}
+
+.mainvisual a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: #fff;
+    animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@media screen and (max-width:840px) {
+    .mainvisual a{
+        padding: 10px 30px 110px;
+    }
+}
+
+@keyframes sdl {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+    }
+
+    35% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+
+    35.1% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+    }
+
+    70%,
+    100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+    }
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.page-contact {
+    font-size: 4rem;
+    text-align: left;
+    margin: 0 auto 0;
+    margin-top: 30vh;
+}
+
+@media screen and (max-width:870px) {
+    .page-contact{
+        margin-top: 10vh;
+    }
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 912px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+@media screen and (max-width:870px) {
+    .flex{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 10%;
+    }
+}
+
+
+input,
+textarea {
+    color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+label {
+    padding: 20px;
+}
+
+input {
+    border: 1px solid #fff;
+    border-radius: 100vh;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    transition: all .8s;
+}
+
+input:focus {
+    background-color: #0e0d20;
+    border: 1px solid rgb(74, 74, 250);
+}
+
+textarea {
+    border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 50px;
+    transition: all .8s;
+}
+
+textarea:focus {
+    background-color: #0e0d20;
+    border: 1px solid rgb(74, 74, 250);
+}
+
+@media screen and (max-width:840px) {
+    input{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+}
+
+.btn {
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    border-radius: 0;
+    margin-top: 100px;
+    padding: 0;
+    width: 50%;
+    transition: all 1s;
+}
+
+.btn:hover{
+    letter-spacing: 3rem;
+    background: radial-gradient(#121212 5%, rgb(18, 0, 110));
+    border: 1px solid transparent;
+    box-shadow: 0 0 8px 4px #fff;
+}
+
+@media screen and (max-width:870px) {
+    .btn:hover{
+        letter-spacing: 1rem;
+    }
+}
+
+#footer{
+    padding: 30px !important;
+}

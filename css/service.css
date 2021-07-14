@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width:840px) {
+    html{
+        font-size: 7px;
+    }
+}
+
+body {
+    color: #fff;
+    font-family: STKaiti;
+    line-height: 1.7;
+    background-color: #0e0d20;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #121212;
+}
+
+li {
+    list-style: none;
+    font-size: 11.6rem;
+}
+
+.portfolio-title {
+    color: #fff;
+    display: none;
+    font-size: 6.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 40;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+}
+
+.page-title {
+    max-width: 100%;
+    font-size: 25rem;
+    font-weight: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+}
+
+@media screen and (max-width:840px) {
+    .page-title{
+        font-size: 18rem;
+    }
+}
+
+.content-img{
+    background-image: url("../img/service.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content-img a {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+    padding: 10px 80px 110px;
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+}
+
+.content-img a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: #fff;
+    animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@media screen and (max-width:840px) {
+    .content-img a{
+        padding: 10px 30px 110px;
+    }
+}
+
+
+@keyframes sdl {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+    }
+
+    35% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+
+    35.1% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+    }
+
+    70%,
+    100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+    }
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll{
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content-title {
+    font-size: 10rem;
+    font-weight: inherit;
+    padding: 10px 0;
+}
+
+@media screen and (max-width:840px) {
+    .content-title{
+        font-size: 7rem;
+    }
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: #121212;
+    overflow: hidden;
+    scroll-snap-align: start;
+    z-index: 30;
+    margin: auto;
+}
+
+.text{
+    height: 100%;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    -webkit-transform: translate(-50%,-30%);
+    -moz-transform: translate(-50%,-30%);
+    padding: 50px;
+}
+
+@media screen and (max-width:1800px) {
+    .text{
+        transform: translate(-50%,-40%);
+        -webkit-transform: translate(-50%,-40%);
+        -moz-transform: translate(-50%,-40%);
+    }
+}
+
+@media screen and (max-width:840px) {
+    .text{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.content-img{
+    padding: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.content:nth-child(3),
+.content:nth-child(5){
+    background: #59918d81;
+}
+
+.content:nth-child(2),
+.content:nth-child(4){
+    background: rgba(0, 0, 0, 0.534);
+}
+
+.content-text {
+    opacity: 1;
+    font-size: 4.5rem;
+    overflow: scroll;
+    text-align: left;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:840px) {
+    .content-text{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+#footer{
+    padding-top: 0 !important;
+}
+
+#footer .footer{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
